@@ -2,7 +2,7 @@
 swaybg -i $(find ~/Pictures/Imagens/* -type f | shuf -n1) -m fill &
 OLD_PID=$!
 while true; do
-    sleep 600
+    sleep 3000
     swaybg -i $(find ~/Pictures/Imagens/* -type f | shuf -n1) -m fill &
     NEXT_PID=$!
     sleep 5

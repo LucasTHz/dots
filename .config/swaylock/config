@@ -3,6 +3,7 @@ font=Work Sans
 
 clock
 timestr=%R
+line-uses-inside
 
 image=/home/thomaz/Pictures/Imagens/wallhaven-gp8pdq.jpg
 
@@ -13,6 +14,8 @@ fade-in=0.2
 indicator
 indicator-radius=150
 indicator-thickness=10
+indicator-x-position=1700
+indicator-y-position=900
 indicator-caps-lock
 
 key-hl-color=880033ff
