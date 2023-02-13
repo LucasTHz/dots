@@ -46,11 +46,11 @@ window#waybar > .horizontal {
 	color: #89b4fa;
 }
 
-#cpu {
+/* #cpu {
 	background-color: #313244;
 	padding: 0 15px;
 	color: #f38ba8;
-}
+} */
 
 #memory {
 	background-color: #313244;
