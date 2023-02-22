@@ -2,7 +2,7 @@
  *
  * Author : Aditya Shakya (adi1090x)
  * Github : @adi1090x
- * 
+ *
  * Rofi Theme File
  * Rofi Version: 1.7.3
  **/
@@ -10,18 +10,18 @@
 /*****----- Configuration -----*****/
 configuration {
 	modi:                       "drun,run,filebrowser,window";
-    show-icons:                 false;
-    display-drun:               " ";
-    display-run:                " ";
-    display-filebrowser:        " ";
-    display-window:             " ";
+    show-icons:                 true;
+    display-drun:               "";
+    display-run:                "";
+    display-filebrowser:        "";
+    display-window:             "";
 	drun-display-format:        "{name}";
 	window-format:              "{w} · {c} · {t}";
 }
 
 /*****----- Global Properties -----*****/
-@import                          "./colors.rasi"
-@import                          "./fonts.rasi"
+@import                          "colors.rasi"
+@import                          "fonts.rasi"
 
 * {
     border-colour:               var(selected);
@@ -56,7 +56,7 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  false;
-    width:                       400px;
+    width:                       600px;
     x-offset:                    0px;
     y-offset:                    0px;
 
@@ -166,7 +166,7 @@ listview {
     reverse:                     false;
     fixed-height:                true;
     fixed-columns:               true;
-    
+
     spacing:                     5px;
     margin:                      0px;
     padding:                     0px;
@@ -178,7 +178,7 @@ listview {
     cursor:                      "default";
 }
 scrollbar {
-    handle-width:                3px ;
+    handle-width:                5px ;
     handle-color:                @handle-colour;
     border-radius:               10px;
     background-color:            @alternate-background;
@@ -307,4 +307,3 @@ error-message {
     background-color:            @background-colour;
     text-color:                  @foreground-colour;
 }
-
