@@ -52,14 +52,21 @@
 		"tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
 	},
 	"pulseaudio": {
-		"scroll-step": 1,
-		"format": "{icon}  {volume}%",
+		"format": "{icon} {volume}%",
+		"format-bluetooth": "  {volume}%",
+		"format-bluetooth-muted": " ",
 		"format-muted": "婢",
 		"format-icons": {
+			"headphone": "",
+			"hands-free": "",
+			"headset": "",
+			"phone": "",
+			"portable": "",
+			"car": "",
 			"default": [
-				"奄",
-				"奔",
-				"墳"
+				"",
+				"",
+				""
 			]
 		},
 		"on-click": "pavucontrol"
