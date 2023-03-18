@@ -15,9 +15,10 @@
 # Edit bellow to control the images transition
 export SWWW_TRANSITION_FPS=60
 export SWWW_TRANSITION_STEP=5
+swww init
 
 # This controls (in seconds) when to switch to the next image
-INTERVAL=300
+INTERVAL=3600
 
 while true; do
 	find ~/Pictures/Imagens/* -type f | shuf -n1 \
