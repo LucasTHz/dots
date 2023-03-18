@@ -58,6 +58,12 @@ window#waybar > .horizontal {
 	color: #f9e2af;
 }
 
+#temperature {
+	background-color: #313244;
+	padding: 0 15px;
+	color: #fab587;
+}
+
 #pulseaudio {
 	background-color: #313244;
 	padding: 0 15px;

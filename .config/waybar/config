@@ -6,6 +6,7 @@
 		"wlr/workspaces",
 		"tray",
 		"memory",
+		"temperature",
 		"hyprland/language",
 		"pulseaudio",
 		"network",
@@ -17,6 +18,12 @@
 		"interval": 30,
 		"format": "  {}%",
 		"format-alt": "  {used:0.1f}G"
+	},
+	"temperature": {
+		"interval": 1,
+		"hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
+		"format": "  {}°C",
+		"format-alt": "  {}°C"
 	},
 	"hyprland/language": {
 		"format": "  {}",
