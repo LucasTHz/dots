@@ -40,12 +40,6 @@ window#waybar > .horizontal {
 	padding-left: 15px;
 }
 
-#language {
-	background-color: #313244;
-	padding: 0 15px;
-	color: #89b4fa;
-}
-
 /* #cpu {
 	background-color: #313244;
 	padding: 0 15px;
@@ -67,7 +61,7 @@ window#waybar > .horizontal {
 #pulseaudio {
 	background-color: #313244;
 	padding: 0 15px;
-	color: #fab387;
+	color: #d0d0d0;
 }
 
 #network {

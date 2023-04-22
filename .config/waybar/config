@@ -7,7 +7,6 @@
 		"tray",
 		"memory",
 		"temperature",
-		"hyprland/language",
 		"pulseaudio",
 		"network",
 		"battery",
@@ -24,11 +23,6 @@
 		"hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
 		"format": "  {}°C",
 		"format-alt": "  {}°C"
-	},
-	"hyprland/language": {
-		"format": "  {}",
-		"format-en": "English",
-		"format-hu": "Hungarian"
 	},
 	"wlr/workspaces": {
 		"disable-scroll": true,

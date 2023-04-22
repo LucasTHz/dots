@@ -31,6 +31,7 @@ else
 		nmcli connection up id "$chosen_id" | grep "successfully" && notify-send "Connection Established" "$success_message"
 	else
 		if [[ "$chosen_network" =~ "" ]]; then
+			notify-send "Digite a senha"
 			wifi_password=$(rofi -dmenu -p "Password: " )
 		fi
 		nmcli device wifi connect "$chosen_id" password "$wifi_password" | grep "successfully" && notify-send "Connection Established" "$success_message"
