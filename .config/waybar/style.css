@@ -58,6 +58,12 @@ window#waybar > .horizontal {
 	color: #fab587;
 }
 
+#custom-wallpaper {
+	background-color: #313244;
+	padding: 0 15px;
+	color: #d0d0d0;
+}
+
 #pulseaudio {
 	background-color: #313244;
 	padding: 0 15px;

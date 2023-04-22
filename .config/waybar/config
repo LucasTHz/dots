@@ -5,6 +5,7 @@
 	"modules-center": [
 		"wlr/workspaces",
 		"tray",
+		"custom/wallpaper",
 		"memory",
 		"temperature",
 		"pulseaudio",
@@ -47,6 +48,11 @@
 	"tray": {
 		"icon-size": 18,
 		"spacing": 5
+	},
+	
+	"custom/wallpaper": {
+		"format": " ",
+		"on-click": "bash ~/.config/waybar/scripts/getRandomWallpaper.sh"
 	},
 	"clock": {
 		"format": "{:  %a, %d %b %Y}",
