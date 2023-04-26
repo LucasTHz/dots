@@ -27,7 +27,12 @@ while true; do
 		done \
 		| sort -n | cut -d':' -f2- \
 		| while read -r img; do
-			swww img "$img"
+			swww img "$img" \
+			-transition-bezier .43,1.19,1,.4 \
+			--transition-type grow \
+			--transition-duration 1 \
+			--transition-fps 60 \
+			--transition-pos bottom-right \
 			sleep $INTERVAL
 		done
 done
