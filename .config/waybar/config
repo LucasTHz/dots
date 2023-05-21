@@ -1,23 +1,21 @@
 {
-	"margin-top": 8,
 	"margin-left": 15,
 	"margin-right": 15,
-	"height": 65,
+	"height": 40,
 	"layer": "top",
-	"modules-center": [
+	"modules-right": [
 		"tray",
 		"custom/wallpaper",
 		"memory",
-		"temperature",
 		"pulseaudio",
 		"network",
 		"battery"
 	],
-	"modules-left": [
+	"modules-center": [
 		"wlr/workspaces",
 		"hyprland/window"
 	],
-	"modules-right": [
+	"modules-left": [
 		"clock",
 		"custom/time"
 	],
@@ -37,14 +35,8 @@
 	},
 	"memory": {
 		"interval": 30,
-		"format": "  {}%",
+		"format": "",
 		"format-alt": "  {used:0.1f}G"
-	},
-	"temperature": {
-		"interval": 1,
-		"hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
-		"format": "  {}°C",
-		"format-alt": "  {}°C"
 	},
 	"wlr/workspaces": {
 		"disable-scroll": true,
@@ -67,7 +59,7 @@
 		}
 	},
 	"tray": {
-		"icon-size": 18,
+		"icon-size": 15,
 		"spacing": 5
 	},
 	"custom/wallpaper": {
@@ -94,11 +86,11 @@
 		"on-click": "pavucontrol"
 	},
 	"network": {
-		"format-wifi": "{essid} 直 {signalStrength}%",
+		"tooltip-format": "{essid}  {bandwidthUpBytes}  {bandwidthDownBytes}",
+		"format-wifi": "直",
 		"format-ethernet": " wired",
-		"format-disconnected": "睊",
 		"on-click": "bash ~/.config/waybar/scripts/rofi-wifi-menu.sh",
-		"format-disconnected": "Disconnected  "
+		"format-disconnected": "睊 Disconnected  "
 	},
 	"battery": {
 		"bat": "BAT1",

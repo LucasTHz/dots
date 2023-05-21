@@ -3,7 +3,7 @@
 	border-radius: 0;
 	font-family: JetBrainsMono Nerd Font;
 	/* font-weight: semibold; */
-	font-size: 14px;
+	font-size: 12px;
 	min-height: 0;
 	font-weight: 500;
 }
@@ -22,7 +22,7 @@ window#waybar > .horizontal {
 	background-color: #f5c2e7;
 	border-top-right-radius: 50px;
 	border-bottom-right-radius: 50px;
-	padding: 8px 15px;
+	padding: 3px 15px;
 }
 
 .horizontal.modules-center {
@@ -32,7 +32,7 @@ window#waybar > .horizontal {
 }
 
 #clock {
-	background-color: #313244;
+	background-color: #1e1e2e;
 	color: #f5c2e7;
 	padding: 0 15px;
 	border-top-left-radius: 50px;
@@ -56,54 +56,48 @@ window#waybar > .horizontal {
 } */
 
 #memory {
-	background-color: #313244;
-	padding: 0 15px;
-	color: #f9e2af;
-}
-
-#temperature {
-	background-color: #313244;
-	padding: 0 15px;
-	color: #fab587;
+	background-color: #1e1e2e;
+	padding: 0 13px;
+	color: #d0d0d0;
 }
 
 #custom-wallpaper {
-	background-color: #313244;
-	padding: 0 15px;
+	background-color: #1e1e2e;
+	padding: 0 13px;
 	color: #d0d0d0;
 }
 
 #pulseaudio {
-	background-color: #313244;
-	padding: 0 15px;
+	background-color: #1e1e2e;
+	padding: 0 13px;
 	color: #d0d0d0;
 }
 
 #network {
-	background-color: #313244;
-	padding: 0 15px;
-	color: #f9e2af;
+	background-color: #1e1e2e;
+	padding: 0 13px;
+	color: #d0d0d0;
 }
 
 #tray {
-	background-color: #313244;
+	background-color: #1e1e2e;
 	/* icons usually give it enough margin :p */
-	padding: 0 15px;
+	padding: 0 13px;
 	padding-left: 30px;
 	border-top-left-radius: 50px;
 	border-bottom-left-radius: 50px;
 }
 
 #battery {
-	background-color: #313244;
-	padding: 0 15px;
+	background-color: #1e1e2e;
+	padding: 0 13px;
 	padding-right: 30px;
 	border-bottom-right-radius: 50px;
 	border-top-right-radius: 50px;
 }
 
 #workspaces {
-	padding: 8px;
+	padding: 6px;
 	padding-right: 15px;
 	background-color: #1e1e2e;
 	border-top-left-radius: 50px;
