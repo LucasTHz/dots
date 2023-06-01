@@ -6,10 +6,10 @@
 	"modules-right": [
 		"tray",
 		"custom/wallpaper",
-		"memory",
 		"pulseaudio",
 		"network",
-		"battery"
+		"battery",
+		"custom/spotify"
 	],
 	"modules-center": [
 		"wlr/workspaces",
@@ -32,11 +32,6 @@
 			"(.*)Spotify Free": "Spotify 󰓇",
 			"(.*)Steam": "Steam 󰓓"
 		}
-	},
-	"memory": {
-		"interval": 30,
-		"format": "",
-		"format-alt": "  {used:0.1f}G"
 	},
 	"wlr/workspaces": {
 		"disable-scroll": true,
@@ -71,25 +66,31 @@
 		"tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
 	},
 	"pulseaudio": {
-		"format": "{icon} {volume}% {format_source}",
-		"format-source": " ",
-		"format-source-muted": " ",
-		"format-bluetooth": "  {volume}%",
-		"format-bluetooth-muted": " ",
-		"format-muted": "婢",
+		"scroll-step": 1,
+		"format": "{volume}% {icon}",
+		"format-bluetooth": "{volume}% {icon}  {format_source}",
+		"format-bluetooth-muted": " {icon}  {format_source}",
+		"format-muted": "婢 {format_source}",
+		"format-source": "{volume}% ",
+		"format-source-muted": "",
+		"format-icons": {
+			"headphone": "",
+			"hands-free": "וֹ",
+			"headset": "  ",
+			"phone": "",
+			"portable": "",
+			"car": "",
+			"default": [
+				""
+			]
+		},
 		"ignored-sinks": [
 			"Easy Effects Sink"
 		],
-		"format-icons": {
-			"microphone": "",
-			"headphone": "",
-			"default": [
-				"",
-				"",
-				""
-			]
-		},
-		"on-click": "pavucontrol"
+		"on-click": "pavucontrol",
+		"on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +2%",
+		"on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -2%",
+		"on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
 	},
 	"network": {
 		"tooltip-format": "{essid}  {bandwidthUpBytes}  {bandwidthDownBytes}",
@@ -125,5 +126,13 @@
 	"custom/time": {
 		"exec": "sh ~/.config/waybar/scripts/getTime.sh",
 		"restart-interval": 60
+	},
+	"custom/spotify": {
+		"exec": "python3 ~/.config/waybar/scripts/mediaplayer.py --player spotify",
+		"format": "{}  ",
+		"return-type": "json",
+		"on-click": "playerctl play-pause",
+		"on-scroll-up": "playerctl next",
+		"on-scroll-down": "playerctl previous"
 	}
 }

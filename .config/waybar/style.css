@@ -96,6 +96,17 @@ window#waybar > .horizontal {
 	border-top-right-radius: 50px;
 }
 
+#custom-spotify {
+	background-color: #18d860;
+	color: #313244;
+	padding-right: 30px;
+	padding-left: 30px;
+	border-bottom-right-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-top-left-radius: 50px;
+}
+
 #workspaces {
 	padding: 6px;
 	padding-right: 15px;
