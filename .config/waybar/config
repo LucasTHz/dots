@@ -6,6 +6,7 @@
 	"modules-right": [
 		"tray",
 		"custom/wallpaper",
+		"memory",
 		"pulseaudio",
 		"network",
 		"battery",
@@ -60,6 +61,19 @@
 	"custom/wallpaper": {
 		"format": " ",
 		"on-click": "bash ~/.config/waybar/scripts/getRandomWallpaper.sh"
+	},
+	"memory": {
+		"interval": 1,
+		"warn": 80,
+		"crit": 90,
+		"format": "{}% {icon}",
+		"format-warning": "{}% ",
+		"format-critical": "{}% ",
+		"format-icons": [
+			" ",
+			" ",
+			" "
+		]
 	},
 	"clock": {
 		"format": "{:  %a, %d %b %Y}",
@@ -128,7 +142,7 @@
 		"restart-interval": 60
 	},
 	"custom/spotify": {
-		"exec": "python3 ~/.config/waybar/scripts/mediaplayer.py --player spotify",
+		"exec": "python3 ~/.config/waybar/scripts/mediaplayer.py",
 		"format": "{}  ",
 		"return-type": "json",
 		"on-click": "playerctl play-pause",
