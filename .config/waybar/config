@@ -13,7 +13,7 @@
 		"custom/spotify"
 	],
 	"modules-center": [
-		"wlr/workspaces",
+		"hyprland/workspaces",
 		"hyprland/window"
 	],
 	"modules-left": [
@@ -34,7 +34,7 @@
 			"(.*)Steam": "Steam 󰓓"
 		}
 	},
-	"wlr/workspaces": {
+	"hyprland/workspaces": {
 		"disable-scroll": true,
 		"all-outputs": true,
 		"format": "{icon}",
@@ -140,13 +140,5 @@
 	"custom/time": {
 		"exec": "sh ~/.config/waybar/scripts/getTime.sh",
 		"restart-interval": 60
-	},
-	"custom/spotify": {
-		"exec": "python3 ~/.config/waybar/scripts/mediaplayer.py",
-		"format": "{}  ",
-		"return-type": "json",
-		"on-click": "playerctl play-pause",
-		"on-scroll-up": "playerctl next",
-		"on-scroll-down": "playerctl previous"
 	}
 }

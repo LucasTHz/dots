@@ -92,6 +92,8 @@ window#waybar>.horizontal {
 	background-color: #1e1e2e;
 	padding: 0 13px;
 	padding-right: 30px;
+	border-bottom-right-radius: 50px;
+	border-top-right-radius: 50px;
 }
 
 #custom-spotify {
